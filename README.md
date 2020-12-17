@@ -5,11 +5,9 @@ Home: https://github.com/jamespic/pyspark-flame
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyspark-flame-feedstock/blob/master/LICENSE.txt)
 
 Summary: A low-overhead sampling profiler for PySpark, that outputs Flame Graphs
-
-
 
 Current build status
 ====================

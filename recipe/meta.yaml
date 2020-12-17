@@ -1,18 +1,18 @@
 {% set name = "pyspark-flame" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.9" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 807099c77fbaefaeb71217995bd22d203c697c6ce32c8e75ff53e1b1b56d9322
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b9b0ccb3e6a56bd433e6330f26ba60746b49e4505c1d934b9ec73a1f7c5f1c4a
 
 build:
   noarch: python
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,11 +32,11 @@ test:
     - pip
 
 about:
-  home: "https://github.com/jamespic/pyspark-flame"
+  home: https://github.com/jamespic/pyspark-flame
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A low-overhead sampling profiler for PySpark, that outputs Flame Graphs"
+  summary: A low-overhead sampling profiler for PySpark, that outputs Flame Graphs
 
 extra:
   recipe-maintainers:
